@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление своим эмоциональным состоянием</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Стресс и его симптомы</h1>
+    </header>
+
+    <div id="opred">
+        <p id="opred-text">Стресс — это естественная реакция организма на трудные ситуации. Важно уметь справляться с ним, чтобы сохранить здоровье и силы.</p>
+    </div>
+
+    <div id="recommendation">
+        <h2>Рекомендации</h2>
+        <p id="recommendation-text">Выберите два симптома, чтобы получить рекомендации как справиться со стрессом.</p>
+    </div>
+
+    <h2>Симптомы стресса</h2>
+    <div id="symptoms">
+        <div class="symptom" onclick="toggleSymptom(this)">Головная боль</div>
+        <div class="symptom" onclick="toggleSymptom(this)">Усталость</div>
+        <div class="symptom" onclick="toggleSymptom(this)">Раздражительность</div>
+        <div class="symptom" onclick="toggleSymptom(this)">Тревожность</div>
+        <div class="symptom" onclick="toggleSymptom(this)">Проблемы со сном</div>
+        <div class="symptom" onclick="toggleSymptom(this)">Проблемы с концентрацией</div>
+        <div class="symptom" onclick="toggleSymptom(this)">Изменения аппетита</div>
+        <div class="symptom" onclick="toggleSymptom(this)">Потеря мотивации</div>
+        <div class="symptom" onclick="toggleSymptom(this)">Чувство подавленности</div>
+        <div class="symptom" onclick="toggleSymptom(this)">Частая смена настроения</div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Рекомендации</h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Стресс и его симптомы. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
